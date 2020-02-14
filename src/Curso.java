@@ -9,6 +9,12 @@ public class Curso {
     private Integer qtdMaxAluno;
     private List<Aluno> listAluno;
 
+    public Curso(String nome, Integer codCurso, Integer qtdMaxAluno) {
+        this.nome = nome;
+        this.codCurso = codCurso;
+        this.qtdMaxAluno = qtdMaxAluno;
+    }
+
     public Curso(String nome, Integer codCurso, ProfessorTitular professorTitular, ProfessorAdjunto professorAdjunto, Integer qtdMaxAluno, List<Aluno> listAluno) {
         this.nome = nome;
         this.codCurso = codCurso;
