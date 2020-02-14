@@ -4,7 +4,11 @@ public class Professor {
     private String nome;
     private String sobrenome;
     private Integer tempoDeCas;
-    private Integer codProfessor;
+    private Integer codProfessor=0;
+
+    public Professor(){
+
+    }
 
     public Professor(String nome, String sobrenome, Integer tempoDeCas, Integer codProfessor) {
         this.nome = nome;
@@ -26,7 +30,7 @@ public class Professor {
         return Objects.hash(codProfessor);
     }
 
-    public String getNom() {
+    public String getNome() {
         return nome;
     }
 

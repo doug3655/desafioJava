@@ -1,6 +1,10 @@
 public class ProfessorTitular extends Professor{
     private String especialidade;
 
+    public ProfessorTitular(){
+
+    }
+
     public ProfessorTitular(String nome, String sobrenome, Integer tempoDeCas, Integer codProfessor, String especialidade) {
         super(nome, sobrenome, tempoDeCas, codProfessor);
         this.especialidade = especialidade;

@@ -93,6 +93,33 @@ public class DigitalHouseManager {
         }
     }
 
+    public Professor buscaProfessor(List<Professor>listaProfessor,Integer codProfessor){
+        for (int i = 0; i < listaProfessor.size(); i++) {
+            if(codProfessor==listaProfessor.get(i).getCodProfessor()){
+                return listaProfessor.get(i);
+            }
+        }
+        Professor professorVazio = new Professor();
+        return professorVazio;
+    }
+
+   /* public void alocarProfessores(Integer codigoCurso, Integer codigoProfessorTitular, Integer codigoProfessorAdjunto){
+        if (buscaProfessor(listProfessor,codigoProfessorAdjunto).getCodProfessor()>0){
+            ProfessorAdjunto cadProfessorAdjunto = new ProfessorAdjunto(buscaProfessor(listProfessor,codigoProfessorAdjunto).getNome(),
+                    buscaProfessor(listProfessor,codigoProfessorAdjunto).getSobrenome(),
+                    buscaProfessor(listProfessor,codigoProfessorAdjunto).getTempoDeCas(),
+                    buscaProfessor(listProfessor,codigoProfessorAdjunto).getTempoDeCas(),
+                    buscaProfessor(listProfessor,codigoProfessorAdjunto).get());
+            if (buscaProfessor(listProfessor,codigoProfessorTitular).getCodProfessor()>0){
+
+            }else {
+                System.out.println("professor titular nao esta cadastrado");
+            }
+        }else {
+            System.out.println("professor adjunto nao esta cadastrado");
+        }
+    }*/ //TERMINAR ISSO
+
     public List<Aluno> getListAluno() {
         return listAluno;
     }
