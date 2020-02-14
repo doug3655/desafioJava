@@ -57,7 +57,7 @@ public class Curso {
                 break;
             }
         }
-        if (tamanho>this.listAluno.size()){
+        if (tamanho==this.listAluno.size()){
             System.out.println("Aluno não foi removido do curso pois não esta cadastrado no curso");
         }
     }
