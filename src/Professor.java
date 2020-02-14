@@ -27,11 +27,11 @@ public class Professor {
     }
 
     public String getNom() {
-        return nom;
+        return nome;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getSobrenome() {
