@@ -31,6 +31,31 @@ public class Curso {
         return Objects.hash(codCurso);
     }
 
+    public Boolean adicionarUmAluno(Aluno umAluno){
+        if(this.listAluno.size()<qtdMaxAluno){
+            this.listAluno.add(umAluno);
+            System.out.println("Aluno inserido no curso");
+            return true;
+        }else {
+            System.out.println("Aluno não inserido no curso,a turma esta cheia");
+            return false;
+        }
+    }
+
+    public void excluirAluno(Aluno umAluno){
+        int tamanho=this.listAluno.size();
+        for (int i = 0; i < this.listAluno.size(); i++) {
+            if (umAluno.equals(listAluno.get(i))){
+                listAluno.remove(i);
+                System.out.println("Aluno removido do curso");
+                break;
+            }
+        }
+        if (tamanho>this.listAluno.size()){
+            System.out.println("Aluno não foi removido do curso pois não esta cadastrado no curso");
+        }
+    }
+
     public String getNome() {
         return nome;
     }
