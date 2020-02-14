@@ -6,7 +6,8 @@ public class DigitalHouseManager {
     private List<Curso>listCurso;
     private List<Matricula>listMatricula;
 
-    public DigitalHouseManager(List<Aluno> listAluno, List<Professor> listProfessor, List<Curso> listCurso, List<Matricula> listMatricula) {
+    public DigitalHouseManager(List<Aluno> listAluno, List<Professor> listProfessor, List<Curso> listCurso,
+                               List<Matricula> listMatricula) {
         this.listAluno = listAluno;
         this.listProfessor = listProfessor;
         this.listCurso = listCurso;
@@ -31,6 +32,23 @@ public class DigitalHouseManager {
             System.out.println("Curso não foi removido pois não esta cadastrado");
         }
     }
+
+    public void registrarProfessorAdjunto(String nome, String sobrenome, Integer codigoProfessor,
+                                          Integer quantidadeDeHoras){
+
+        ProfessorAdjunto professorAdjunto = new ProfessorAdjunto(nome,sobrenome,0,
+                codigoProfessor,quantidadeDeHoras);
+
+        listProfessor.add(professorAdjunto);
+    }
+
+    public void registrarProfessorTitular(String nome, String sobrenome, Integer codigoProfessor, String especialidade){
+
+        ProfessorTitular professorTitular = new ProfessorTitular(nome,sobrenome,0,codigoProfessor,especialidade);
+
+        listProfessor.add(professorTitular);
+    }
+
 
     public List<Aluno> getListAluno() {
         return listAluno;

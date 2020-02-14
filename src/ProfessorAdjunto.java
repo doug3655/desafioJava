@@ -1,16 +1,16 @@
 public class ProfessorAdjunto extends Professor {
-    private String horasMonitoria;
+    private Integer horasMonitoria;
 
-    public ProfessorAdjunto(String nome, String sobrenome, Integer tempoDeCas, Integer codProfessor, String horasMonitoria) {
+    public ProfessorAdjunto(String nome, String sobrenome, Integer tempoDeCas, Integer codProfessor, Integer horasMonitoria) {
         super(nome, sobrenome, tempoDeCas, codProfessor);
         this.horasMonitoria = horasMonitoria;
     }
 
-    public String getHorasMonitoria() {
+    public Integer getHorasMonitoria() {
         return horasMonitoria;
     }
 
-    public void setHorasMonitoria(String horasMonitoria) {
+    public void setHorasMonitoria(Integer horasMonitoria) {
         this.horasMonitoria = horasMonitoria;
     }
 }
