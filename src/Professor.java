@@ -1,13 +1,13 @@
 import java.util.Objects;
 
 public class Professor {
-    private String nom;
+    private String nome;
     private String sobrenome;
     private Integer tempoDeCas;
     private Integer codProfessor;
 
-    public Professor(String nom, String sobrenome, Integer tempoDeCas, Integer codProfessor) {
-        this.nom = nom;
+    public Professor(String nome, String sobrenome, Integer tempoDeCas, Integer codProfessor) {
+        this.nome = nome;
         this.sobrenome = sobrenome;
         this.tempoDeCas = tempoDeCas;
         this.codProfessor = codProfessor;
